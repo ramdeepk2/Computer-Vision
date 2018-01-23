@@ -1,0 +1,43 @@
+Krishna Ramdeep
+kr26866
+CS 376 Computer Vision Assignment 0
+
+Part I:
+2.
+  a) Gives us a vector of a random permutation of all the integers from 1 to 5588.
+
+  b) a is a 2x25 matrix, and b is simply a 1x25 row vector for the second row of a.
+
+  c) f is a 500x1 matrix of pseudorandom values, and g is all the values of f
+  that are positive.
+
+  d) x is a 1x100 vector of 0.25, y is a 1x100 vector of 0.5, and z is a 1x100 vector of 0.75.
+
+  e) a is a 1x300 matrix, b is a 1x300 matrix with the elements of a flipped.
+
+3.
+  a) plot(sort(reshape(A, 100 * 100, 1)))
+
+  b) hist(reshape(A, 100 * 100, 1), 32)
+
+  c) r_channel = zeros(100, 100)
+  	 g_channel = zeros(100, 100)
+     b_channel = zeros(100, 100)
+     r_channel(A > t) = 255
+     newImage = cat(3, r_channel, g_channel, b_channel)
+     imshow(newImage)
+
+  d) X = A(51:size(A, 1), 51:size(A, 2))
+ 
+  e) newImage = A - mean2(A)
+  
+  f) function [] = roll()
+     ceil(rand(1) * 6)
+     end
+  
+  g) z = reshape(y, 2, 3)
+
+  h) [x, I] = max(A(:))
+     [r, c] = ind2sub(size(A), I)
+  
+  i) x = nnz(m == 8)
