@@ -1,0 +1,2 @@
+Currently, HOG cell size is set to 4 and the # of negative samples = 25000. Feel free to change these numbers.
+You may have to edit the VLFEAT setup.m filepath to get that working (located near the beginning of proj4.m).
